@@ -6,9 +6,10 @@ import os
 from datetime import datetime
 
 # ================= CONFIGURAÇÕES =================
-BOT_TOKEN = "8363564066:AAGT4m4I-kLa_WkDWe7u31uoPS6fZnPchrE"
-CHAT_ID = "167753189"
-DOC_ID = "1DZv3vwfuipKGdlq_BIOYNTT9HQEopqo6IZxJ4iDw2tg"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+CHAT_ID = os.getenv("CHAT_ID")
+DOC_ID = os.getenv("DOC_ID")
+
 CHECK_INTERVAL_MINUTES = 60
 HASH_FILE = "last_hash.txt"
 # =================================================
